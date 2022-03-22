@@ -1,18 +1,15 @@
 <template>
     <div class="root">
-        <h1>Footer</h1>
+        <h1>From Page</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'FooterPage',
+    name:'FormPage',
 }
 </script>
 
 <style lang="css" scoped>
-
-
-
+    
 </style>
-
