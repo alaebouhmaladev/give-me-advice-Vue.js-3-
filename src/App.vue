@@ -11,6 +11,7 @@
 import HeaderPage from './components/HeaderPage.vue';
 import FormPage from './components/FormPage.vue';
 import FooterPage from './components/FooterPage.vue';
+import Quotes from '';
 
 export default {
   name: 'App',
