@@ -1,5 +1,6 @@
 <template>
     <div class="form-root">
+        {{message}}
         <div class="result-box">
             <p class="result-title">Here you Advice</p>
             <p class="result-text"
@@ -13,6 +14,7 @@
 export default {
     name:'FormResult',
     props:['advice','color'],
+    inject: ['quotes','message'],
 }
 </script>
 

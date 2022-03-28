@@ -11,7 +11,7 @@
 import HeaderPage from './components/HeaderPage.vue';
 import FormPage from './components/FormPage.vue';
 import FooterPage from './components/FooterPage.vue';
-import Quotes from '';
+import Quotes from './data/quote.json';
 
 export default {
   name: 'App',
@@ -19,7 +19,18 @@ export default {
     HeaderPage,
     FormPage,
     FooterPage,
-  }
+  },
+  provide(){
+    return{
+      quotes  : this.Quotes,
+      message : 'This message from Provide'
+    };
+  },
+  data() {
+    return {
+      Quotes,
+    }
+  },
 }
 </script>
 

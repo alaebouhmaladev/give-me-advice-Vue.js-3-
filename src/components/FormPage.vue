@@ -30,12 +30,13 @@
 import FormResult from './FormResult.vue';
 export default {
   components: { FormResult },
-    name:'FormPage',
+    name   :'FormPage',
+    inject : ['quotes','message'],
     data() {
         return {
             UserNumber: 0,
             UserColor:'#ffffff',
-            quotes:['quotes 1','quotes 2','quotes 3','quotes 4','quotes 5','quotes 6'],
+            // quotes:['quotes 1','quotes 2','quotes 3','quotes 4','quotes 5','quotes 6'],
         }
     },
     computed:{
@@ -47,7 +48,7 @@ export default {
             if(!Advice){
                 return 'unlucky enough, no quotes for you';
             }else{
-                return Advice;
+                return Advice.quoteText;
             }
         },
     }
@@ -86,12 +87,11 @@ export default {
         max-width: 40%;
         height: 30px;
     }
+    .data {
+        margin: 35px;
+    }
     .data span {
         padding: 8px 15px;
         margin: 0px 10px;
-        background: #2c3e50;
-        color: #fff;
-        border-radius: 4px;
-        font-size:20px;
     }
 </style>
