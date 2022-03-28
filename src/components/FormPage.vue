@@ -16,7 +16,7 @@
                 <label class="form-label">Color</label>
                 <input type="color" class="form-input" v-model="UserColor"/> 
             </fieldset>
-            <form-result></form-result>
+            <form-result :color="UserColor" :advice="getAdvice"></form-result>
             <div class="data">
                 <span>{{UserNumber}}</span>
                 <span>{{UserColor}}</span>

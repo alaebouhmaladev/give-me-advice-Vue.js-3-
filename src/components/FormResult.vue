@@ -2,7 +2,9 @@
     <div class="form-root">
         <div class="result-box">
             <p class="result-title">Here you Advice</p>
-            <p class="result-text">your quotes is here</p>
+            <p class="result-text"
+            :style="{color:color}"
+            >{{advice}}</p>
         </div>
     </div>
 </template>
@@ -10,6 +12,7 @@
 <script>
 export default {
     name:'FormResult',
+    props:['advice','color'],
 }
 </script>
 
